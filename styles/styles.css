@@ -1,4 +1,5 @@
-*{  
+*{
+  margin: 0;
   box-sizing: border-box;
   /* border: 1px solid red; */
 }
@@ -13,8 +14,16 @@ body {
 nav {
   display: flex;
   padding: 5px;
-  justify-content: end;
+  justify-content: space-between;
   background-color: #d6d1d1;
+}
+
+.page-logo{
+  width: 4rem;
+  height: 4rem;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #ebe7e7;
 }
 
 .nav-links {
@@ -23,22 +32,29 @@ nav {
 
 .nav-link {
   margin: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
   padding: 15px 20px;
   border-radius: 5px;
-  background-color: #e1dcdc;
+  background: #ebe7e7;
 }
 
 main {
+  padding: 0 7%;
   text-align: center;
 }
 
 .intro{
-  height: 40vh;
+  height: 30vh;
 }
 
 .title {
   font-size: 2em;
-  margin-bottom: 40px;
+  margin: 5px;
+}
+
+.clearfix{
+  margin: 10px 0;
 }
 
 .updates, .cards {
@@ -51,11 +67,10 @@ main {
   width: 200px;
   text-align: left;
   float: left;
-  margin: 20px;
 }
 
 .record {
-  margin-bottom: 10px;
+  margin: 10px 0;
   padding: 10px;
   border-radius: 5px;
   background-color: #f1f1f1;
@@ -64,7 +79,6 @@ main {
 .cards {
   display: inline-block;
   width: 700px;
-  margin: 20px;
   padding: 30px;
 }
 
@@ -75,7 +89,42 @@ main {
 }
 
 .card {
-  background-color: #d6d1d1;
   height: 140px;
   border-radius: 5px;
+  background-size: cover;
+  color: white;
+}
+
+.one{
+  background-image: url('../assets/img/Financial.jpg');
+}
+.two{
+  background-image: url('../assets/img/Funding.jpeg');
+}
+.three{
+  background-image: url('../assets/img/Policies.webp');
+}
+.four{
+  background-image: url('../assets/img/Public\ Services.jpeg');
+}
+.five{
+  background-image: url('../assets/img/Employment1.webp');
+}
+.six{
+  background-image: url('../assets/img/Projects.jpg');
+}
+
+.card div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
+}
+
+footer{
+  height: 100px; 
+  background-color: #bdb9b9;
 }
