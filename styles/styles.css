@@ -32,40 +32,6 @@ nav {
   justify-content: center;
 }
 
-.search-bar {
-  display: flex;
-  margin: 0 15px;
-  line-height: 28px;
-  align-items: center;
-  position: relative;
-  width: 350px;
- }
- 
- .input {
-  width: 100%;
-  height: 40px;
-  line-height: 28px;
-  padding: 0 1rem;
-  padding-left: 2.5rem;
-  border: 2px solid transparent;
-  border-radius: 8px;
-  outline: none;
-  background-color: #f3f3f4;
-  color: #0d0c22;
- }
- 
- .input::placeholder {
-  color: #9e9ea7;
- }
-  
- .icon {
-  position: relative;
-  left: 2rem;
-  fill: #9e9ea7;
-  width: 2rem;
-  height: 2rem;
- }
- 
 .nav-links {
   display: flex;
   align-items: center;
@@ -81,15 +47,15 @@ nav {
 }
 
 main {
-  padding: 0 7%;
   text-align: center;
 }
 
 .intro{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 60vh;
 }
 
 .title {  
@@ -97,7 +63,43 @@ main {
   font-weight: bolder;
 }
 
+.search-bar {
+  display: flex;
+  margin: 15px;
+  line-height: 28px;
+  width: 300px;
+  align-items: center;
+  position: relative;
+ }
+ 
+ .input {
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  line-height: 28px;
+  padding: 0 1rem;
+  padding-left: 2.5rem;
+  border-radius: 8px;
+  outline: none;
+  color: #080716;
+  border: 1px solid #b8b5b5;
+  background-color: #e9e9e9;
+ }
+ 
+ .input::placeholder {
+  color: #939397;
+ }
+  
+ .icon {
+  position: absolute;
+  fill: #9e9ea7;
+  margin: 0 5px;
+  width: 2rem;
+  height: 2rem;
+ }
+ 
 .clearfix{
+  padding: 0 7%;
   margin-bottom: 10px;
 }
 
@@ -141,22 +143,22 @@ main {
 }
 
 .one{
-  background-image: url('../assets/img/Financial.jpg');
+  background-image: url('./assets/img/Financial.jpg');
 }
 .two{
-  background-image: url('../assets/img/Funding.jpeg');
+  background-image: url('./assets/img/Funding.jpeg');
 }
 .three{
-  background-image: url('../assets/img/Policies.webp');
+  background-image: url('./assets/img/Policies.webp');
 }
 .four{
-  background-image: url('../assets/img/Public\ Services.jpeg');
+  background-image: url('./assets/img/Public\ Services.jpeg');
 }
 .five{
-  background-image: url('../assets/img/Employment1.webp');
+  background-image: url('./assets/img/Employment1.webp');
 }
 .six{
-  background-image: url('../assets/img/Projects.jpg');
+  background-image: url('./assets/img/Projects.jpg');
 }
 
 .card div{
