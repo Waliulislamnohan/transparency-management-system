@@ -20,7 +20,7 @@ nav{
   width: 100%;
   z-index: 200;
   backdrop-filter: blur(10px); 
-  background: #dad9d9;
+  background: #e4e4e4;
 }
 
 .header-logo{
@@ -52,11 +52,11 @@ nav{
 }
 
 .nav-link:hover{
-  background: #c9c9c9; 
+  background: #d8d8d8; 
 }
 
 .nav-link:active{
-  background: #acacacfd;
+  background: #c9c9c9fd;
 }
 
 .nav-icon{
@@ -65,18 +65,18 @@ nav{
   fill: #044d91;
 }
 
-main {
+.main-container {
   text-align: center;
 }
 
 .intro{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  padding-top: 100px;
   height: 78vh;
   background-image: url(./src/assets/img/Intro_bg.jpg);
-  background-position: bottom;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
@@ -119,6 +119,7 @@ main {
  }
  
  .search-btn{
+  cursor: pointer;
   width: 100px;
   height: 45px;
   font-size: 1.2rem;
@@ -133,7 +134,7 @@ main {
  }
 
  .search-btn:hover{
-  background-color: #265d8d;
+  background-color: #2c6699;
  }
 
  .search-btn:active{
@@ -175,7 +176,7 @@ main {
   text-align: left;
   overflow: hidden;
   border-radius: 10px;
-  background-color: #e0e0e0;
+  background: #e4e4e4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -229,7 +230,7 @@ main {
 
 .cards {
   display: inline-block;
-  width: 700px;
+  width: 80%;
   padding: 30px;
   border-radius: 10px;
   background-color: #cecece;
@@ -243,7 +244,7 @@ main {
 }
 
 .card {
-  height: 140px;
+  height: 9rem;
   border-radius: 5px;
   background-size: cover;
   color: rgb(168, 168, 168);
@@ -257,22 +258,39 @@ a {
 
 .one{
   background-image: url('./src/assets/img/Financial.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 .two{
   color: #fff;
   background-image: url('./src/assets/img/Funding.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .three{
   background-image: url('./src/assets/img/Policies.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 .four{
   background-image: url('./src/assets/img/Services.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 .five{
   background-image: url('./src/assets/img/Employment1.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 .six{
   background-image: url('./src/assets/img/Projects.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: not-allowed;
 }
 
 .card div{
@@ -290,7 +308,7 @@ footer{
   flex-direction: column;
   align-items: center;
   justify-content: center; 
-  background-color: #cfcfcf;
+  background: #dddddd;
 }
 
 .get-contacts{
@@ -314,19 +332,18 @@ footer{
   overflow: visible;
   display: block;
   width: 2.1rem;
-  border-radius: 9px;
-  padding: 7px;
+  border-radius: 5px;
+  padding: 5px;
   fill: #1d1c1c;
-  transition: background .3s;
 }
 
 .footer-icon-img:hover{
-  background: #3a3a3a;
+  background: #4e4e4e;
   fill: #cacaca;
 }
 
 .footer-icon-img:active{
-  background: #5c5c5c;
+  background: #838383;
 }
 
 .copy-right{
@@ -335,6 +352,6 @@ footer{
   font-size: 14px;
   width: 70%;
   padding: 10px 0;
-  color: #5e6164;
+  color: #505050;
   border-top: 1px solid #aaaaaa;
 }

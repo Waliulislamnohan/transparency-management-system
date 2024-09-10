@@ -1,13 +1,18 @@
-import React from 'react';
-import Header from "./components/header.jsx";
-import Updates from "./components/updates.jsx";
-import Footer from "./components/footer.jsx";
+import React, { useEffect } from 'react';
+import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
 
 export default function Budgets() {
+
+  useEffect(()=>{
+    document.title = "Budgets and Operations"
+  })
+
   return (
     <>
       <Header/>
-      <Updates/>
+      <main style={{ height: '67vh' }}>
+      </main>
       <Footer/>
     </>
   )
