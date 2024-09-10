@@ -103,7 +103,7 @@ nav{
  .input {
   width: 400px;
   height: 45px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 28px;
   padding: 0 1rem;
   padding-left: 3rem;
@@ -354,4 +354,35 @@ footer{
   padding: 10px 0;
   color: #505050;
   border-top: 1px solid #aaaaaa;
+}
+
+.budget-main{
+  display: flex;
+  padding: 20px 0;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.update-box{
+  position: absolute;
+  left: 60px;
+  width: 250px;
+}
+
+.bd-map{
+  widht: 100%;
+  height: auto;
+}
+
+.bd-map path{
+  fill: #0d75d6;
+  transition: .3s;
+}
+
+.bd-map path:hover{
+  fill: #0a59a3;
+}
+
+.bd-map path:active{
+  fill: #084680;
 }
