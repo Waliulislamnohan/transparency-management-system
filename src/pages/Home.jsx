@@ -18,7 +18,7 @@ export default function App(){
           </div>    
         </div>
         <Stats/>
-      <div className="info-section"> 
+      <section className="info-section"> 
           <Updates/>
           <div className="cards-container">        
             <div className="cards">
@@ -44,7 +44,7 @@ export default function App(){
               </div>
             </div>            
           </div>
-      </div>
+      </section>
     </main>
     <Footer/>
   </>
