@@ -2,23 +2,24 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; margin: 1px; */
+  /* border: 1px solid red; */
 }
 
 html{
   scroll-behavior: smooth;
+  overflow-x: hidden; 
 }
 
 body {
+  font-family: Arial, sans-serif;
   overflow-x: hidden;
   background-color: #f1f1f1;
-  font-family: Arial, sans-serif;
 }
 
 nav{
   display: flex;
   justify-content: space-between;
-  height: 4rem;
+  height:4rem;
   backdrop-filter: blur(10px); 
   background: #e4e4e4;
 }
@@ -70,6 +71,10 @@ nav{
   display: none;
 }
 
+#check{
+  display: none;
+}
+
 @media (max-width: 57rem){
 
   .options{
@@ -77,8 +82,8 @@ nav{
   }
   
 .mb-options{
-    display: flex;
-  position: absolute;
+  display: flex;
+  position: fixed;
   row-gap: 10px;
   top: 4rem;
   width: 16rem;
@@ -86,11 +91,12 @@ nav{
   flex-direction: column;
   height: auto;
   background: #e4e4e4;
-  transition: .3s;
+  transition: right .3s ease-in-out;
+  z-index: 10;
 }
 
-  .mb-options.open{
-    right: 0;
+  #check:checked ~ .mb-options{
+    right: 0rem;
   } 
 
 .mb-nav-link{
@@ -119,10 +125,6 @@ nav{
   fill: #044d91;
 }
 
-#check{
-  display: none;
-}
-
 .check-label {
   position: fixed;
   display: flex;
@@ -137,7 +139,6 @@ nav{
   height: 2.5rem;
   gap: 10px;
   transition-duration: .3s;
-  z-index: 250;
 }
 
 .bar {
@@ -181,8 +182,9 @@ nav{
   flex-direction: column;
   align-items: center;
   padding-top: 22vh;
-  height: 78vh;
+  height: 79vh;
   background-size: 100% 100%;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-image: url(./src/assets/img/Intro_bg.jpg);
 }
@@ -190,6 +192,18 @@ nav{
 .title {  
   font-size: 4rem;
   font-weight: bolder;
+}
+
+@media (max-width: 30rem){
+  .intro{
+    padding-top: 20vh;
+    height: 72vh;    
+    background-size: 100% 40%;
+  }
+
+  .title{
+    font-size: 3rem;
+  }
 }
 
 .search-bar {
@@ -247,7 +261,7 @@ nav{
   display: flex;
   justify-content: center;
   text-align: left;
-  height: 80px;
+  height: 12vh;
   color: #fff;
   background-color: #00687d;
  }
@@ -255,11 +269,12 @@ nav{
  .stats{
   display: flex;
   align-self: center;
-  gap: 60px;
+  width: 90%;
+  line-height: 1.2rem;
+  justify-content: space-around;
  }
 
  .stat{
-  line-height: 1.2rem;
   text-underline-offset: 3px;
  }
  
@@ -267,17 +282,9 @@ nav{
   font-size: .9rem;
  }
 
-.info-section{
-  display: grid;
-  grid-template-columns: 1.2fr 4fr;
-  padding: 0 4%;
-  margin: 20px 0;  
-}
-
 @media (max-width: 57rem){
   
  .stats{
-  gap: 1.5rem;
   font-size: 80%;
  }
 
@@ -286,13 +293,32 @@ nav{
  }
 }
 
+@media (max-width: 30rem){  
+  .stats{
+    line-height: 1rem;
+  }
+ 
+  .amount-des{
+   font-size: .8rem;
+  }
+ }
+
+.info-section{
+  display: grid;
+  grid-template-columns: 30% 70%;
+  gap: 1vh;
+  padding: 0 1vh;
+  margin: 2vh 0;  
+}
+
 /* Updates */
 
 .updates-container {
   text-align: left;
   overflow: hidden;
   border-radius: 10px;
-  max-width: 100%;
+  margin: 0 auto;
+  max-width: 350px;
   background: #e4e4e4;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -347,12 +373,13 @@ nav{
 
 /* cards */
 
+.cards-container{ 
+}
+
 .cards {
   display: inline-block;
-  width: 90%;
-  max-width: 100%;
-  max-width: 47rem;
   padding: 30px;
+  max-width: 80%;
   border-radius: 10px;
   background-color: #cecece;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -372,18 +399,57 @@ nav{
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.card div{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
+}
+
 @media (max-width: 57rem){
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 48rem){
   .info-section{
     grid-template-columns: none;
-    grid-template-rows: 2fr 1.5fr;
+    grid-template-rows: auto;
   }
-
+  
   .updates-container{
     grid-row: 2;
+    max-width: 500px;
   }
-
+  
   .cards{
-    width: auto;
+   max-width: 100%;
+   padding: 20px;
+  }
+}
+
+
+@media (max-width: 30rem){
+  .grid{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+    .grid h3{
+      font-size: 100%;
+    }
+  
+  .card{
+    height: 5;
+  }
+}
+
+@media (max-width: 20rem){
+  .grid{
+    grid-template-columns: 1fr;
   }
 }
 
@@ -427,16 +493,6 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
-}
-
-.card div{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 10px;
-  height: 100%;
-  border-radius: 5px;
-  background: linear-gradient(0deg,#00000088 30%, #ffffff44 100%);
 }
 
 /* Footer */
