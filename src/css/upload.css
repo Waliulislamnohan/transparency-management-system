@@ -1,0 +1,201 @@
+.container {
+    display: none; /* Hide all containers by default */
+    text-align: center;
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login Container Styles */
+.login-container {
+    display: block; /* Show the login form initially */
+}
+
+.login-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #45a049;
+}
+
+/* Form Container Styles */
+.form-container {
+    display: none; /* Initially hidden */    
+    margin-top: 20px;
+    width: 750px;
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container select {
+    width: calc(100% - 22px); /* Adjust for padding and border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Drag-and-Drop Styles */
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 40px; /* Increased padding for larger area */
+    text-align: center;
+    cursor: pointer;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    height: 320px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop-area.dragover {
+    border-color: #4CAF50;
+    background-color: #e0ffe0;
+}
+
+.drop-area p {
+    margin: 0;
+    font-size: 18px; /* Slightly larger font size for better readability */
+    color: #666;
+}
+
+.drop-area a {
+    background: none;
+    color: #007BFF; /* Button link color */
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.drop-area a:hover {
+    text-decoration: underline;
+}
+
+/* File Preview Styles */
+.file-preview {
+    display: none; /* Hidden by default, shown when files are uploaded */
+    margin-top: 20px;
+}
+
+.file-preview ul {
+    list-style: none;
+    padding: 0;
+}
+
+.file-preview ul li {
+    margin: 5px 0;
+    padding: 8px;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.button:active {
+    background-color: #3c8a40;
+}
+
+/* Loading Spinner Styles */
+.loading-container {
+    display: none; /* Initially hidden */
+}
+
+.loading-container p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Thank You Message Styles */
+.thank-you-container {
+    display: none; /* Initially hidden */
+}
+
+.thank-you-container img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.thank-you-container h1 {
+    color: green;
+}

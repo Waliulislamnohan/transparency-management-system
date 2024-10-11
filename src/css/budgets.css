@@ -1,0 +1,25 @@
+
+.budget-main{
+    display: grid;
+    grid-template-columns: 1.2fr 4fr;
+    align-items: center;
+    padding: 10px 7%;
+    gap: 6%;
+  }
+  
+  @media (max-width: 57rem){
+    .update-box{
+      width: 14rem;
+    }
+
+    .budget-main{
+      grid-template-columns: none;
+      grid-template-rows: auto;
+      gap: 0;
+      padding: 10px;
+    }
+  
+    .footer-icon-img{
+      width: 1.8rem;
+    }  
+  }

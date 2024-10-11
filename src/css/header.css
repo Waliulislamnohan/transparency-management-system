@@ -1,0 +1,158 @@
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height:4rem;
+    backdrop-filter: blur(10px); 
+    background: #e5e5e5;
+  }
+  
+  .header-logo{
+    margin: auto;
+    margin-left: 1rem;
+  }
+  
+  .logo-img{
+    display: block;
+    width: 3.2rem;
+  }
+  
+  .options{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .nav-link{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 1rem;
+    height: 100%;
+    color: #000000;
+    transition: .3s;
+  }
+  
+  .nav-link:hover{
+    background: #d8d8d8; 
+  }
+  
+  .nav-link:active{
+    background: #c9c9c9fd;
+  }
+  
+  .nav-icon{
+    width: 1.5rem;
+    margin-right: 5px;
+    fill: #044d91;
+  }
+  
+  .mb-options{
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  @media (max-width: 57rem){
+  
+    .options{
+      display: none;
+    }
+    
+  .mb-options{
+    display: flex;
+    position: fixed;
+    row-gap: 10px;
+    top: 4rem;
+    width: 16rem;
+    right: -16rem;
+    flex-direction: column;
+    height: auto;
+    background: #e4e4e4;
+    transition: right .3s ease-in-out;
+    z-index: 10;
+  }
+  
+    #check:checked ~ .mb-options{
+      right: 0rem;
+    } 
+  
+  .mb-nav-link{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bolder;
+    text-transform: uppercase;
+    border-radius: 5px;
+    padding: 1rem 10px;
+    color: #000000;
+    transition: .3s;
+  }
+  
+  .mb-nav-link:hover{
+    background: #d8d8d8; 
+  }
+  
+  .mb-nav-link:active{
+    background: #c9c9c9fd;
+  }
+  
+  .mb-nav-icon{
+    width: 1.5rem;
+    margin-right: 5px;
+    fill: #044d91;
+  }
+  
+  .check-label {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 10px 20px;
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    gap: 10px;
+    transition-duration: .3s;
+  }
+  
+  .bar {
+    width: 100%;
+    height: 4px;
+    background-color: #000000;
+    border-radius: 5px;
+    transition-duration: .3s;
+  }
+  
+  #check:checked + .check-label .bar{
+    margin-left: 12px;
+  }
+  
+  #check:checked + .check-label #bar2 {
+    transform: rotate(135deg);
+    margin-left: 0;
+    transform-origin: center;
+    transition-duration: .3s;
+  }
+  
+  #check:checked + .check-label #bar1 {
+    transform: rotate(45deg);
+    transition-duration: .3s;
+    transform-origin: left center;
+  }
+  
+  #check:checked + .check-label #bar3 {
+    transform: rotate(-45deg);
+    transition-duration: .3s;
+    transform-origin: left center;
+  }
+  }

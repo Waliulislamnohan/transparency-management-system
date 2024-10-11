@@ -1,3 +1,11 @@
+@import './css/budgets.css';
+@import './css/header.css';
+@import './css/footer.css';
+@import './css/updates.css';
+@import './css/upload.css';
+@import './css/charts.css';
+
+
 *{
   margin: 0;
   padding: 0;
@@ -16,163 +24,6 @@ body {
   background-color: #f1f1f1;
 }
 
-nav{
-  display: flex;
-  justify-content: space-between;
-  height:4rem;
-  backdrop-filter: blur(10px); 
-  background: #e4e4e4;
-}
-
-.header-logo{
-  margin: auto;
-  margin-left: 1rem;
-}
-
-.logo-img{
-  display: block;
-  width: 3.2rem;
-}
-
-.options{
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-.nav-link{
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-weight: bolder;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 1rem;
-  height: 100%;
-  color: #000000;
-  transition: .3s;
-}
-
-.nav-link:hover{
-  background: #d8d8d8; 
-}
-
-.nav-link:active{
-  background: #c9c9c9fd;
-}
-
-.nav-icon{
-  width: 1.5rem;
-  margin-right: 5px;
-  fill: #044d91;
-}
-
-.mb-options{
-  display: none;
-}
-
-#check{
-  display: none;
-}
-
-@media (max-width: 57rem){
-
-  .options{
-    display: none;
-  }
-  
-.mb-options{
-  display: flex;
-  position: fixed;
-  row-gap: 10px;
-  top: 4rem;
-  width: 16rem;
-  right: -16rem;
-  flex-direction: column;
-  height: auto;
-  background: #e4e4e4;
-  transition: right .3s ease-in-out;
-  z-index: 10;
-}
-
-  #check:checked ~ .mb-options{
-    right: 0rem;
-  } 
-
-.mb-nav-link{
-  display: flex;
-  align-items: center;
-  list-style: none;
-  font-weight: bolder;
-  text-transform: uppercase;
-  border-radius: 5px;
-  padding: 1rem 10px;
-  color: #000000;
-  transition: .3s;
-}
-
-.mb-nav-link:hover{
-  background: #d8d8d8; 
-}
-
-.mb-nav-link:active{
-  background: #c9c9c9fd;
-}
-
-.mb-nav-icon{
-  width: 1.5rem;
-  margin-right: 5px;
-  fill: #044d91;
-}
-
-.check-label {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  margin: 10px 20px;
-  right: 0;
-  top: 0;
-  width: 2.5rem;
-  height: 2.5rem;
-  gap: 10px;
-  transition-duration: .3s;
-}
-
-.bar {
-  width: 100%;
-  height: 4px;
-  background-color: #000000;
-  border-radius: 5px;
-  transition-duration: .3s;
-}
-
-#check:checked + .check-label .bar{
-  margin-left: 12px;
-}
-
-#check:checked + .check-label #bar2 {
-  transform: rotate(135deg);
-  margin-left: 0;
-  transform-origin: center;
-  transition-duration: .3s;
-}
-
-#check:checked + .check-label #bar1 {
-  transform: rotate(45deg);
-  transition-duration: .3s;
-  transform-origin: left center;
-}
-
-#check:checked + .check-label #bar3 {
-  transform: rotate(-45deg);
-  transition-duration: .3s;
-  transform-origin: left center;
-}
-}
-
 .main-container {
   text-align: center;
 }
@@ -182,7 +33,7 @@ nav{
   flex-direction: column;
   align-items: center;
   padding-top: 22vh;
-  height: 79vh;
+  height: 80vh;
   background-size: 100% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -231,7 +82,7 @@ nav{
   outline: none;
   color: #080716;
   border: 1px solid #c4c4c4;
-  background-color: #f1f1f1;
+  background-color: #f6f6f6;
  }
  
  .search-btn{
@@ -270,7 +121,7 @@ nav{
   display: flex;
   align-self: center;
   width: 90%;
-  line-height: 1.2rem;
+  line-height: 1.4rem;
   justify-content: space-around;
  }
 
@@ -311,68 +162,6 @@ nav{
   margin: 2vh 0;  
 }
 
-/* Updates */
-
-.updates-container {
-  text-align: left;
-  overflow: hidden;
-  border-radius: 10px;
-  margin: 0 auto;
-  max-width: 350px;
-  background: #e4e4e4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.updates-header {
-  background-color: #2378c3;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.updates {
-  padding: 20px;
-}
-
-.update {
-  margin-bottom: 15px;
-}
-
-.update:last-child {
-  margin-bottom: 0;
-}
-
-.update-title {
-  font-weight: bold;
-  font-size: .9rem;
-  color: #333;
-  margin-bottom: 5px;
-}
-
-.update-date {
-  font-size: 0.7rem;
-  color: #555;
-  margin-bottom: 3px;
-}
-
-.update-content {
-  font-size: 0.8rem;
-  color: #383838;
-}
-
-.read-more {
-  color: #007bff;
-  font-size: 0.7rem;
-}
-
-.read-more:hover {
-  text-decoration: underline;
-}
-
-/* cards */
-
 .cards-container{ 
 }
 
@@ -381,8 +170,7 @@ nav{
   padding: 30px;
   max-width: 80%;
   border-radius: 10px;
-  background-color: #cecece;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #dedcdc;
 }
 
 .grid {
@@ -443,7 +231,7 @@ nav{
     }
   
   .card{
-    height: 5;
+    height: 7rem;
   }
 }
 
@@ -459,10 +247,10 @@ a {
 }
 
 .one{
+  color: #fff;
   background-image: url('./src/assets/img/Financial.jpg');
   background-repeat: no-repeat;
   background-position: center;
-  cursor: not-allowed;
 }
 .two{
   color: #fff;
@@ -493,111 +281,4 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
-}
-
-/* Footer */
-
-footer{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  background: #dddddd;
-}
-
-.get-contacts{
-  display: flex;
-  width: 95%;
-  padding: 10px;
-  justify-content: space-between;
-}
-
-.socials{
-  text-align: center;
-}
-
-.footer-icons{
-  display: flex;
-  padding: 5px;
-  gap: 8px;
-}
-
-.footer-icon-img{
-  overflow: visible;
-  display: block;
-  width: 2.1rem;
-  border-radius: 5px;
-  padding: 5px;
-  fill: #1d1c1c;
-}
-
-.footer-icon-img:hover{
-  background: #4e4e4e;
-  fill: #cacaca;
-}
-
-.footer-icon-img:active{
-  background: #838383;
-}
-
-.copy-right{
-  text-align: center;
-  line-height: 1.5;
-  font-size: 14px;
-  width: 70%;
-  padding: 10px 0;
-  color: #505050;
-  border-top: 1px solid #aaaaaa;
-}
-
-/* Budgets page */
-
-.budget-main{
-  display: grid;
-  grid-template-columns: 1.2fr 4fr;
-  align-items: center;
-  padding: 0 7%;
-  gap: 7%; 
-}
-
-.update-box{
-  width: 16rem;
-}
-
-.svg-container{
-  display: flex;
-  justify-content: center;
-}
-
-.bd-map{
-  transform: scale(.9);
-}
-
-.bd-map path{
-  fill: #0d75d6;
-  stroke: rgb(201, 201, 201);
-  stroke-width: 1px;
-  transition: .3s;
-}
-
-.bd-map path:hover{
-  fill: #0b5fad;
-}
-
-.bd-map path:active{
-  fill: #084680;
-}
-
-@media (max-width: 57rem){
-  .update-box{
-    width: 14rem;
-  }
-
-  .bd-map{
-    transform: scale(.8);
-  }
-
-  .footer-icon-img{
-    width: 1.8rem;
-  }  
 }
