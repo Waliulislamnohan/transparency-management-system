@@ -26,9 +26,9 @@ export default function App(){
                 <Link to="/Budgets" className="card-link">
                   <div className="card two"><div><h3>Budgets and Operations</h3></div></div>
                 </Link>
-                <Link to="/UploadForm" className="card-link">
+                <a href="#" className="card-link">
                   <div className="card one"><div><h3>Financial Reports</h3></div></div>
-                </Link>
+                </a>
                 <a href="#" className="card-link">
                   <div className="card three"><div><h3>Govt. Policies</h3></div></div>
                 </a>

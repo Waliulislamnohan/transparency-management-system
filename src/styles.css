@@ -2,8 +2,8 @@
 @import './css/header.css';
 @import './css/footer.css';
 @import './css/updates.css';
-@import './css/upload.css';
 @import './css/charts.css';
+@import './css/Upload.css';
 
 
 *{
@@ -247,10 +247,10 @@ a {
 }
 
 .one{
-  color: #fff;
   background-image: url('./src/assets/img/Financial.jpg');
   background-repeat: no-repeat;
   background-position: center;
+  cursor: not-allowed;
 }
 .two{
   color: #fff;

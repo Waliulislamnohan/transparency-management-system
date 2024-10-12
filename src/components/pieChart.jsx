@@ -68,7 +68,7 @@ export default function PieCh() {
     ],
   };
 
-  const [selectedYear, setSelectedYear] = useState('2023');
+  const [selectedYear, setSelectedYear] = useState('2024');
   const budgetData = budgetYearly[selectedYear];
 
   return (
@@ -77,7 +77,7 @@ export default function PieCh() {
       <div className="sidebar">
         <h3>Select Year</h3>
         <div className="radio-group">
-          {Object.keys(budgetYearly).map((year) => (
+          {Object.keys(budgetYearly).reverse().map((year) => (
             <div key={year}>
               <label>
                 <input
