@@ -37,7 +37,6 @@ body {
   background-size: 100% 100%;
   background-position: bottom;
   background-repeat: no-repeat;
-  background-image: url(./src/assets/img/Intro_bg.jpg);
 }
 
 .title {  
@@ -75,12 +74,12 @@ body {
   width: 30vw;
   min-width: 15rem;
   height: 2.9rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 0 1rem;
   padding-left: 3rem;
   border-radius: 5px;
   outline: none;
-  color: #080716;
+  color: #393939;
   border: 1px solid #c4c4c4;
   background-color: #f6f6f6;
  }
@@ -247,37 +246,31 @@ a {
 }
 
 .one{
-  background-image: url('./src/assets/img/Financial.jpg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
 }
 .two{
   color: #fff;
-  background-image: url('./src/assets/img/Funding.jpeg');
   background-repeat: no-repeat;
   background-position: center;
 }
 .three{
-  background-image: url('./src/assets/img/Policies.webp');
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
 }
 .four{
-  background-image: url('./src/assets/img/Services.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
 }
 .five{
-  background-image: url('./src/assets/img/Employment1.webp');
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;
 }
 .six{
-  background-image: url('./src/assets/img/Projects.jpg');
   background-repeat: no-repeat;
   background-position: center;
   cursor: not-allowed;

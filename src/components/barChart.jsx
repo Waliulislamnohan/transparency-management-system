@@ -16,7 +16,7 @@ export default function BarCh() {
     <>
       <h2 className='chartTitle'>Bangladesh Annual Budget Overview (in Billions USD)</h2>
       <p className='chartDes'>The progression of Bangladesh's annual budget from 2017 to 2024</p>
-       <ResponsiveContainer width="100%" height={390}>
+       <ResponsiveContainer className="bar-container" width="100%" height={390}>
         <BarChart
           data={data}
           margin={{

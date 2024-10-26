@@ -72,16 +72,17 @@ export default function PieCh() {
   const budgetData = budgetYearly[selectedYear];
 
   return (
-    <div style={{ display: 'flex', padding: '20px' }}>
+    <div className = 'pie-container' style={{ display: 'flex', padding: '20px' }}>
       {/* Sidebar with Radio Buttons */}
       <div className="sidebar">
-        <h3>Select Year</h3>
+        <h3 className='radio-title'>Year</h3>
         <div className="radio-group">
           {Object.keys(budgetYearly).reverse().map((year) => (
             <div key={year}>
               <label>
                 <input
                   type="radio"
+                  className='radio-btn'
                   value={year}
                   checked={selectedYear === year}
                   onChange={() => setSelectedYear(year)} />

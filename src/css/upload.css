@@ -9,6 +9,7 @@
 
   .login-container{
     display: block;
+    width: 40vh;
     padding: 20px;
     border-radius: 7px;
     background-color: #fcfcfc;
@@ -17,7 +18,7 @@
   .login-form {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 100%;
   }
   
   .login-form-group {
@@ -72,7 +73,8 @@
   /* Form Container Styles */
 .form-container {  
   margin-top: 20px;
-  width: 750px;
+  width: 90vw;
+  max-width: 750px;
 }
 
 .form-container h2 {

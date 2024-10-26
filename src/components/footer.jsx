@@ -6,7 +6,7 @@ export default function Footer() {
     <footer>
       <div className="get-contacts">
       <div className="contacts">
-        <h4 className="contacts-title">Contacs</h4>
+        <h4 className="contacts-title">Contacts</h4>
         <div className="email">Support@gmail.com</div>
         <div className="number">+8801*********</div>        
       </div>

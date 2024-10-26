@@ -8,15 +8,11 @@
   }
   
   @media (max-width: 57rem){
-    .update-box{
-      width: 14rem;
-    }
-
     .budget-main{
       grid-template-columns: none;
       grid-template-rows: auto;
-      gap: 0;
       padding: 10px;
+      margin: 10px;
     }
   
     .footer-icon-img{

@@ -1,4 +1,3 @@
-// src/pages/Login.js
 import React, { useState } from 'react';
 
 export default function Login() {
@@ -7,11 +6,11 @@ export default function Login() {
 
   const [formData, setFormData] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
-  const [fileError, setFileError] = useState(''); // New error state for file upload
-  const [success, setSuccess] = useState(false); // Track login success
-  const [files, setFiles] = useState([]); // Store selected files
-  const [isUploading, setIsUploading] = useState(false); // Upload state
-  const [uploadSuccess, setUploadSuccess] = useState(false); // Upload success state
+  const [fileError, setFileError] = useState('');
+  const [success, setSuccess] = useState(false);
+  const [files, setFiles] = useState([]);
+  const [isUploading, setIsUploading] = useState(false);
+  const [uploadSuccess, setUploadSuccess] = useState(false);
 
   // Function to handle input changes
   function handleChange(event) {
@@ -47,7 +46,6 @@ function handleFileChange(event) {
   
   addFiles(newFiles); // Call addFiles with the new files
   
-  // Reset the input field to allow re-selection of the same files
   event.target.value = null; // Reset the input value
 }
 
