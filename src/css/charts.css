@@ -40,22 +40,24 @@
   .sidebar{
     border-radius: 10px;
     min-width: 120px;
+    max-height: 320px;
+    margin-top: 40px;
     background-color: #eaeaea;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
   }
 
-  .radio-title{
+  .check-title{
     text-align: center;
     padding: 10px;
     color: white;
     background-color: #2378c3;
   }
 
-  .radio-group{
+  .check-group{
 
   }
 
-  .radio-btn{
+  .check-btn{
     margin: 10px;
   }

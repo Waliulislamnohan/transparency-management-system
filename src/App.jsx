@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Budgets from "./pages/budgets";
 import Upload from './pages/Upload';
+import Blogs from './pages/blogs';
+import Admin from './pages/admin';
 
 export default function App() {
   return (
@@ -11,6 +13,8 @@ export default function App() {
         <Route index element={<Home />} />
         <Route path="/budgets" element={<Budgets />} />
         <Route path="/upload" element={<Upload />} />
+        <Route path="/blogs" element={<Blogs />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
   )
