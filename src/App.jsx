@@ -5,6 +5,7 @@ import Budgets from "./pages/budgets";
 import Upload from './pages/Upload';
 import Blogs from './pages/blogs';
 import Admin from './pages/admin';
+import Process from './pages/process';
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/upload" element={<Upload />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/process" element={<Process />} />
       </Routes>
     </BrowserRouter>
   )

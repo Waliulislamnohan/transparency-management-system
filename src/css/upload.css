@@ -38,7 +38,6 @@
   border: 2px dashed #ccc;
   padding: 40px; /* Increased padding for larger area */
   text-align: center;
-  cursor: pointer;
   color: #333;
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -117,7 +116,7 @@
 .button {
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50;
+  background-color: #0088ff;
   color: white;
   border: none;
   border-radius: 4px;
@@ -126,18 +125,18 @@
 }
 
 .button:hover {
-  background-color: #45a049;
+  background-color: #027fed;
 }
 
 .button:active {
-  background-color: #3c8a40;
+  background-color: #036bc5;
 }
 
 .file-error-message {
   color: red;
-  margin-top: 10px; 
+  margin: 10px; 
+  text-align: center;
 }
-
 
 /* Loading Spinner Styles */
 .messege-con{
