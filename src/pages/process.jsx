@@ -8,22 +8,31 @@ export default function Process () {
   const allSteps = [
     {
       name: "Upload file",
-      Component: () => <div>Upload your document here.</div>,
+      Component: () => {
+        return <div style={{ height: "30vh"}}>Upload your document here.</div>;
+      },
     },
     {
       name: "Processing file",
-      Component: () => <div>Proecessing your file.</div>,
+      Component: () => {
+        return <div style={{ height: "30vh" }}>Processing your file.</div>;
+      },
     },
     {
       name: "Review results",
-      Component: () => <div>Reviewing the processed file.</div>,
-    }
-  ]
+      Component: () => {
+        return <div style={{ height: "30vh" }}>Reviewing the processed file.</div>;
+      },
+    },
+  ];
+  
 
   return (
     <>
         <Header/>
+        <div className="stepper-container">          
         <Stepper steps={allSteps}/>
+        </div>
         <Footer/>
     </>
   )
