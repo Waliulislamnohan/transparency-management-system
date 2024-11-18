@@ -40,7 +40,6 @@
   .sidebar{
     border-radius: 10px;
     min-width: 120px;
-    max-height: 320px;
     margin-top: 40px;
     background-color: #eaeaea;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -53,11 +52,25 @@
     color: white;
     background-color: #2378c3;
   }
-
+  
   .check-group{
-
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .check-option{
+    padding: 10px;
   }
 
-  .check-btn{
-    margin: 10px;
+  .check-option:hover{
+    background-color: #e1dfdf;
   }
+  
+  .check-option:active{
+    background-color: #d1cfcf;
+  }
+  
+  .check-option span{
+    margin: 0 10px;
+  }
+  

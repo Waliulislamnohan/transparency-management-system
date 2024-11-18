@@ -2,6 +2,7 @@ import React from 'react'
 import Header from "../components/header.jsx";
 import Footer from "../components/footer.jsx";
 import Stepper from '../components/stepper.jsx';
+import Upload from '../components/Upload.jsx';
 
 export default function Process () {
 
@@ -9,19 +10,23 @@ export default function Process () {
     {
       name: "Upload file",
       Component: () => {
-        return <div style={{ height: "30vh"}}>Upload your document here.</div>;
+        return (
+        <div className='step-content .upload-page-container'>
+          <Upload/>
+        </div>
+      )
       },
     },
     {
       name: "Processing file",
       Component: () => {
-        return <div style={{ height: "30vh" }}>Processing your file.</div>;
+        return <div className='step-content'>Processing your file.</div>;
       },
     },
     {
       name: "Review results",
       Component: () => {
-        return <div style={{ height: "30vh" }}>Reviewing the processed file.</div>;
+        return <div className='step-content'>Reviewing the processed file.</div>;
       },
     },
   ];
@@ -31,6 +36,7 @@ export default function Process () {
     <>
         <Header/>
         <div className="stepper-container">          
+        <h1 className='stepper-title'>Evaluate your document</h1>
         <Stepper steps={allSteps}/>
         </div>
         <Footer/>

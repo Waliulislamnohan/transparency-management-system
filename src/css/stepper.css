@@ -1,9 +1,10 @@
- .stepper ,.stepper *{
-    /* border: 1px solid black; */
-}
-  
   .stepper-container{
-    margin: 20px 20%;
+    margin: 10px 27%;
+  }
+
+  .stepper-title{
+    text-align: center;
+    padding: 20px;
   }
 
   .stepper {
@@ -11,6 +12,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .step-content{
+    min-height: 52vh;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.532);
+    border-radius: 10px;
   }
   
   .step {
@@ -59,10 +69,13 @@
     transition: 0.2s ease;
   }
 
+  .step-btns{
+
+  }
+
   .step-btn{
     cursor: pointer;
     padding: 10px 20px;
-    margin: 20px;
-    border-radius: 5px;
-
+    margin-left: 10px;
+    border-radius: 7px;
   }

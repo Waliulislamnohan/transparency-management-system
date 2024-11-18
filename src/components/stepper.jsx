@@ -81,16 +81,14 @@ export default function Stepper({ steps = [] }) {
             
       {!isComplete && 
       ( 
-      <>
+      <div className='step-btns'>
       <button className="step-btn" onClick={handlePrev} disabled={currentStep === 1}>Back</button>
       <button className='step-btn' onClick={handleNext} 
       style={{
         backgroundColor: currentStep === steps.length ? '#3C88DA' : '',
         color: currentStep === steps.length ? '#fff' : ''
-      }}
-      
-      >{currentStep === steps.length ? "Finish" : "Next"}</button>
-      </>
+      }}>{currentStep === steps.length ? "Finish" : "Next"}</button>
+      </div>
          )}
 
     </>

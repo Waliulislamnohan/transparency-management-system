@@ -74,11 +74,9 @@ function addFiles(newFiles) {
   }
 
   return (
-    <div className="upload-page-container">
         <div className="container form-container" id="formContainer">
           {!isUploading && !uploadSuccess && (
             <div>
-              <h2>Submit Your Document</h2>
               {fileError && <p className="file-error-message">{fileError}</p>}
               <form id="documentForm" onSubmit={handleDocumentSubmit}>
                 <div
@@ -115,7 +113,6 @@ function addFiles(newFiles) {
                   </div>
                 )}
 
-                <label htmlFor="category">Select Category</label>
                 <select id="category" name="category">
                   <option value="">Choose a category</option>
                   <option value="budgets">Budgets and Operations</option>
@@ -148,6 +145,5 @@ function addFiles(newFiles) {
             )}
           </div>
         </div>
-    </div>
   );
 }

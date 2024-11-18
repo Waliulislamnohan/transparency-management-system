@@ -14,7 +14,7 @@ export default function BarCh() {
 
   return (
     <>
-      <h2 className='chartTitle'>Bangladesh Annual Budget Overview (in Billions USD)</h2>
+      <h2 className='chartTitle'>Bangladesh's Annual Budget Overview (in Billions USD)</h2>
       <p className='chartDes'>The progression of Bangladesh's annual budget from 2017 to 2024</p>
        <ResponsiveContainer className="bar-container" width="100%" height={390}>
         <BarChart
@@ -29,7 +29,7 @@ export default function BarCh() {
           <XAxis dataKey="year" />
           <YAxis tickFormatter={(value) => `${value}B`}/>
           <Tooltip formatter={(value) => `${value}B`} /> 
-          <Legend formatter={() => 'Budget (in Billion USD)'} />
+          <Legend formatter={() => 'Budget (in Billions USD)'} />
           <Bar dataKey="Budget" fill="#8884d8" activeShape={<Rectangle/>} />
         </BarChart>
       </ResponsiveContainer>   

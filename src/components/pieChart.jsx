@@ -75,23 +75,23 @@ export default function PieCh() {
     <div className = 'pie-container' style={{ display: 'flex', padding: '20px' }}>
       {/* Sidebar with Radio Buttons */}
       <div className="sidebar">
-        <h3 className='check-title'>Year</h3>
-        <div className="check-group">
-          {Object.keys(budgetYearly).reverse().map((year) => (
-            <div key={year}>
-              <label>
-                <input
-                  type="checkbox"
-                  className='check-btn'
-                  value={year}
-                  checked={selectedYear === year}
-                  onChange={() => setSelectedYear(year)} />
-                {year}
-              </label>
-            </div>
-          ))}
-        </div>
-      </div>
+  <h3 className="check-title">Year</h3>
+  <div className="check-group">
+    {Object.keys(budgetYearly).reverse().map((year) => (
+      <label key={year} className="check-option">
+        <input
+          type="radio"
+          className="check-btn"
+          value={year}
+          checked={selectedYear === year}
+          onChange={() => setSelectedYear(year)}
+        />
+        <span>{year}</span>
+      </label>
+    ))}
+  </div>
+</div>
+
 
       {/* Pie Chart */} 
       <div className="pie-chart"> 
@@ -104,11 +104,11 @@ export default function PieCh() {
             cx="50%"
             cy="50%"
             outerRadius="80%"
-            animationDuration={300} // Adjusted animation duration
+            animationDuration={600} // Adjusted animation duration
             label={(entry) => `${entry.name}: $${entry.value}B`}
           >
             {budgetData.map((entry, index) => (
-              <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+              <Cell style={{outline: "none"}} key={`cell-${index}`} fill={colors[index % colors.length]} />
             ))}
           </Pie>
         </PieChart>
