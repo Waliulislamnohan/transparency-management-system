@@ -1,39 +1,51 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Updates() {
+  const articlesData = [
+    {
+      id: 1,
+      title: "Importance of Financial Transparency",
+      date: "12 January 2024",
+      content: "Financial transparency is essential to ensuring public trust in government systems. Learn more about how transparency can help track spending effectively.",
+    },
+    {
+      id: 2,
+      title: "Addressing Corruption",
+      date: "15 January 2024",
+      content: "Corruption thrives where financial information is hidden. By providing transparency, we can help prevent and address corruption in public spending.",
+    },
+    {
+      id: 3,
+      title: "Enhancing Public Trust",
+      date: "20 January 2024",
+      content: "Advancements in technology have enabled better tracking of public spending, ensuring that taxpayer money is spent effectively and with full accountability.",
+    }
+   ]
   return (
     <>
-    <div className="updates-container">
+  <div className="updates-container">
     <div className="updates-header">
       Recent Updates
     </div>
     <div className="updates">
-      <div className="update">
-        <div className="update-title">2024 Reserve update</div>
-        <div className="update-date">16 January 2024</div>
-        <div className="update-content">
-          Get the latest updates on Bangladesh's Foreign Reserves..
-        <a href="#" className="read-more">Read More</a>
+    {articlesData.map((article) => (
+        <div className="update" key={article.id}>
+          <div className="update-title">{article.title}</div>
+          <div className="update-date">{article.date}</div>
+          <div className="update-content">
+            {article.content}
+            
+          </div>
+          <Link to={`/articles/${article.id}`} className="read-more">Read More</Link>
         </div>
-      </div>
-      <div className="update">
-        <div className="update-title">New Tax Reports</div>
-        <div className="update-date">12 January 2024</div>
-        <div className="update-content">
-          Learn about the newly released tax reports..
-        <a href="#" className="read-more">Read More</a>
-        </div>
-      </div>
-      <div className="update">
-        <div className="update-title">New Project report</div>
-        <div className="update-date">5 January 2024</div>
-        <div className="update-content">
-          Budgets on the recent mega projects..
-        <a href="#" className="read-more">Read More</a>
-        </div>
-      </div>
+      ))}
     </div>
-  </div> 
-    </>
+    <div className="view-blogs">
+      <a href="/articles" className="view-blogs-link">See all</a>
+    </div>
+  </div>
+</>
+
   )
 }

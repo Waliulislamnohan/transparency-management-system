@@ -1,5 +1,5 @@
 
-.updates-container {
+.updates-container{
     text-align: left;
     overflow: hidden;
     border-radius: 10px;
@@ -32,7 +32,7 @@
   
   .update-title {
     font-weight: bold;
-    font-size: .9rem;
+    font-size: 1rem;
     color: #333;
     margin-bottom: 5px;
   }
@@ -44,6 +44,13 @@
   }
   
   .update-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #444;
+    max-height: 90px;
     font-size: 0.8rem;
     color: #383838;
   }
@@ -55,5 +62,23 @@
   
   .read-more:hover {
     text-decoration: underline;
+    color: #0b56a5;
+  }
+
+  .view-blogs {
+    text-align: center; 
+    margin: 10px 0;
+  }
+  
+  .view-blogs-link {
+    font-size: 16px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .view-blogs-link:hover {
+    color: #0056b3;
   }
   
