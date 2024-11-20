@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import './css/budgets.css';
 @import './css/header.css';
 @import './css/footer.css';
@@ -7,6 +8,8 @@
 @import './css/admin.css';
 @import './css/stepper.css';
 @import './css/articles.css';
+@import './css/article.css';
+@import './css/text-animation.css';
 
 
 *{
@@ -22,7 +25,7 @@ html{
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   background-color: #f1f1f1;
 }
@@ -42,20 +45,11 @@ body {
   background-repeat: no-repeat;
 }
 
-.title {  
-  font-size: 4rem;
-  font-weight: bolder;
-}
-
 @media (max-width: 30rem){
   .intro{
     padding-top: 20vh;
     height: 72vh;    
     background-size: 100% 40%;
-  }
-
-  .title{
-    font-size: 3rem;
   }
 }
 

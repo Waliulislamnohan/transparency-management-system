@@ -10,8 +10,18 @@ nav{
   }
   
   .header-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
     margin: auto;
     margin-left: 1rem;
+  }
+
+  .header-logo label{
+    font-size: 1.3rem;
+    font-weight: bolder;
+    color: #063969;
+    cursor: pointer;
   }
   
   .logo-img{

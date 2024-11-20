@@ -1,0 +1,62 @@
+.title{
+    box-sizing: content-box;
+    height: 70px;
+    display: flex;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.title *{
+    /* border: 1px solid red; */
+}
+
+.start-word, .end-word{
+    overflow: hidden;
+}
+
+.middle-word{
+    padding: 0 10px;
+}
+
+.start-word span{
+    animation: spin_words 13s infinite;
+}
+
+.end-word span{
+    animation: spin_words 13s infinite;
+    animation-delay: 2s;
+}
+
+.start-word span, .end-word span{
+    display: block;
+    height: 100%;
+    padding-left: 10px;
+    color: #0088ff;
+}
+
+@keyframes spin_words{
+    10%{
+        transform: translateY(-110%);
+    }
+    25%{
+        transform: translateY(-100%);
+    }
+    35%{
+        transform: translateY(-210%);
+    }
+    50%{
+        transform: translateY(-200%);
+    }
+    60%{
+        transform: translateY(-310%);
+    }
+    75%{
+        transform: translateY(-300%);
+    }
+    85%{
+        transform: translateY(-410%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}

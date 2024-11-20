@@ -10,6 +10,7 @@ import policies from "../assets/img/Policies.webp";
 import sevices from "../assets/img/Services.jpeg";
 import employment from "../assets/img/Employment1.webp";
 import projects from "../assets/img/Projects.jpg";
+import Intro from '../components/text-animation.jsx';
 
 export default function App(){
   return( 
@@ -17,7 +18,7 @@ export default function App(){
       <Header />
       <main className="main-container">
       <div style={{backgroundImage: `url(${intro})`}} className="intro">
-          <h1 className="title">Transparency Portal</h1> 
+          <Intro/>
         </div>
         <Stats/>
       <section className="info-section"> 
@@ -31,18 +32,18 @@ export default function App(){
                 <Link to="#" className="card-link">
                 <div style={{backgroundImage: `url(${finance})`}} className="card one"><div><h3>Financial Reports</h3></div></div>
                 </Link>
-                <a href="#" className="card-link">
+                <Link to="#" className="card-link">
                 <div style={{backgroundImage: `url(${policies})`}} className="card three"><div><h3>Govt. Policies</h3></div></div>
-                </a>
-                <a href="#" className="card-link">
+                </Link>
+                <Link to="#" className="card-link">
                 <div style={{backgroundImage: `url(${sevices})`}} className="card four"><div><h3>Public Services</h3></div></div>
-                </a>
-                <a href="#" className="card-link">
+                </Link>
+                <Link to="#" className="card-link">
                 <div style={{backgroundImage: `url(${employment})`}} className="card five"><div><h3>Employment</h3></div></div>
-                </a>
-                <a href="#" className="card-link">
+                </Link>
+                <Link to="#" className="card-link">
                 <div style={{backgroundImage: `url(${projects})`}} className="card six"><div><h3>Development Projects</h3></div></div>
-                </a>
+                </Link>
               </div>
             </div>            
           </div>
