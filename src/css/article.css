@@ -3,6 +3,18 @@
     margin: auto;
 }
 
+@media (max-width: 57rem){
+    .article-container{
+        max-width: 70vw;
+    }
+}
+
+@media (max-width: 40rem){
+    .article-container{
+        max-width: 90vw;
+    }
+}
+
 .article-container *{
 }
 

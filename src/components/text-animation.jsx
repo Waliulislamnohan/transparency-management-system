@@ -4,7 +4,7 @@ export default function Intro() {
   
   return (
     <>
-    <div className="title">
+    <h1 className="title">
     <div className="start-word">
         <span>Track</span>
         <span>Analyze</span>
@@ -22,7 +22,7 @@ export default function Intro() {
         <span>by region</span>
         <span>by sector</span>
     </div>
-</div>
+</h1>
 
     </>
   )

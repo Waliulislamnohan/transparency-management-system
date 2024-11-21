@@ -24,6 +24,13 @@ nav{
     color: #063969;
     cursor: pointer;
   }
+
+  
+  @media (max-width: 30rem){
+    .header-logo label{
+      font-size: 1rem;
+    }
+  }
   
   .logo-img{
     display: block;

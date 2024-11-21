@@ -1,70 +1,74 @@
-.chart{
-    margin: 10px 0;
-    padding: 10px 0;
-    border-radius: 10px;
-    background-color: #ebebeb;
-    box-shadow: 0 2px 5px #0000001a;
+.chart {
+  margin: 10px 0;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #ebebeb;
+  box-shadow: 0 2px 5px #0000001a;
 }
 
-.chartTitle,.chartDes{
-    margin: 10px;
+.chartTitle,
+.chartDes {
+  margin: 10px;
 }
 
-@media (max-width: 57rem){
-    .chart{
-        grid-row: 1;        
-    }
+@media (max-width: 57rem) {
+  .chart {
+    grid-row: 1;
   }
+}
 
-.pie-container{
+.pie-container {
   margin: 0 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pie-chart {
-    width: 100%;
-    height: 400px;
-  }
+  width: 100%;
+  height: 400px;
+}
 
-  @media (max-width: 57rem) {
-    .pie-chart {
-      height: 300px;
-    }
-  }
-  
-  .sidebar{
-    border-radius: 10px;
-    min-width: 120px;
-    margin-top: 40px;
-    background-color: #eaeaea;
-    box-shadow: 0 2px 5px #0000001a;
-    overflow: hidden;
-  }
 
-  .check-title{
-    text-align: center;
-    padding: 10px;
-    color: white;
-    background-color: #2378c3;
+@media (max-width: 57rem) {
+  .pie-chart {
+    height: 300px;
   }
-  
-  .check-group{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .check-option{
-    padding: 10px;
-  }
+ 
+  .pie-container {
+  margin: 0;
+  } 
+}
 
-  .check-option:hover{
-    background-color: #e1dfdf;
+@media (max-width: 40rem) {  
+  .pie-chart {
+    height: 220px;
   }
-  
-  .check-option:active{
-    background-color: #d1cfcf;
-  }
-  
-  .check-option span{
-    margin: 0 10px;
-  }
-  
+.pie-chart tspan{
+  font-size: .6rem;
+}
+}
+
+.dropdown {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+#year-select {
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px #0000001a;
+  background-color: #fff;
+}
+
+#year-select:focus {
+  outline: none;
+}

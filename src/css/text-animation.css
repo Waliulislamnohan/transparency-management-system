@@ -3,8 +3,22 @@
     height: 80px;
     display: flex;
     font-size: 3.5rem;
+    gap: 5px;
     font-weight: bolder;
 }
+
+@media (max-width: 78rem){
+    .title{
+        font-size: 2.2rem;        
+    }
+  }
+
+  @media (max-width: 48rem){
+    .title{
+        font-size: 1.8rem;        
+    }
+  }
+
 
 .title *{
     /* border: 1px solid red; */
@@ -14,15 +28,11 @@
     overflow: hidden;
 }
 
-.middle-word{
-    padding: 0 10px;
-}
-
 .start-word span, .end-word span{
     display: block;
     height: 100%;
     color: #0088ff;
-    animation: spin_words 16s infinite;
+    animation: spin_words 20s infinite;
 }
 
 .start-word span{
@@ -31,9 +41,28 @@
 }
 
 .end-word span{
-    animation-delay: 4s;
+    animation-delay: 4.5s;
     text-align: start;
 }
+
+@media (max-width: 40rem){
+    .title{
+        flex-direction: column;
+        height: 130px;  
+        gap: 0; 
+    }
+
+    .title span{
+        text-align: start;
+    }
+}
+
+@media (max-width: 20rem){
+    .title{
+        height: 100px;
+        font-size: 1.3rem;        
+    }
+  }
 
 @keyframes spin_words{
     10%{

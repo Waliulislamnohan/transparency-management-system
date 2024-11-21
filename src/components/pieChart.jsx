@@ -73,24 +73,23 @@ export default function PieCh() {
 
   return (
     <div className = 'pie-container' style={{ display: 'flex', padding: '20px' }}>
-      {/* Sidebar with Radio Buttons */}
-      <div className="sidebar">
-  <h3 className="check-title">Year</h3>
-  <div className="check-group">
-    {Object.keys(budgetYearly).reverse().map((year) => (
-      <label key={year} className="check-option">
-        <input
-          type="radio"
-          className="check-btn"
-          value={year}
-          checked={selectedYear === year}
-          onChange={() => setSelectedYear(year)}
-        />
-        <span>{year}</span>
-      </label>
-    ))}
-  </div>
-</div>
+      <div className="dropdown" style={{ marginBottom: '20px' }}>
+        <label htmlFor="year-select" className="dropdown-label" style={{ marginRight: '10px', fontWeight: 'bold' }}>
+          Select Year:
+        </label>
+        <select
+          id="year-select"
+          value={selectedYear}
+          onChange={(e) => setSelectedYear(e.target.value)}
+          style={{ padding: '8px', fontSize: '16px' }}
+        >
+          {Object.keys(budgetYearly).reverse().map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+      </div>
 
 
       {/* Pie Chart */} 
