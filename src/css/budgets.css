@@ -1,10 +1,10 @@
 
 .budget-main{
     display: grid;
-    grid-template-columns: 1.2fr 4fr;
+    grid-template-columns: 1.5fr 4fr;
     align-items: center;
-    padding: 10px 4%;
-    gap: 6%;
+    padding: 10px 2%;
+    gap: 2%;
   }
   
   @media (max-width: 57rem){

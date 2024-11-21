@@ -1,8 +1,8 @@
 .title{
     box-sizing: content-box;
-    height: 70px;
+    height: 80px;
     display: flex;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: bolder;
 }
 
@@ -18,20 +18,21 @@
     padding: 0 10px;
 }
 
-.start-word span{
-    animation: spin_words 13s infinite;
-}
-
-.end-word span{
-    animation: spin_words 13s infinite;
-    animation-delay: 2s;
-}
-
 .start-word span, .end-word span{
     display: block;
     height: 100%;
-    padding-left: 10px;
     color: #0088ff;
+    animation: spin_words 16s infinite;
+}
+
+.start-word span{
+    animation-delay: 2s;
+    text-align: end;
+}
+
+.end-word span{
+    animation-delay: 4s;
+    text-align: start;
 }
 
 @keyframes spin_words{

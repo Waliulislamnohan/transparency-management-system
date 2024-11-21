@@ -22,8 +22,14 @@ export default function Article(){
       <p className="article-description">{article.description}</p>
         {article.content.map((item, index) => {
           if (item.type === "paragraph") {
-            return <p className='article-para' key={index}>{item.text}</p>;
-          } else if (item.type === "image") {
+            return (
+                <>
+                    {item.subtitle && <h3 className='article-subtitle' key={`subtitle-${index}`}>{item.subtitle}</h3>}
+                    <p className='article-para' key={`paragraph-${index}`}>{item.text}</p>
+                </>
+            );
+        }
+        else if (item.type === "image") {
             return <img className='article-img' key={index} src= {item.src} alt={item.alt} />;
           }
           return null;

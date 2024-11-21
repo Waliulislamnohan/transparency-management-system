@@ -21,7 +21,7 @@ export default function Updates() {
       ))}
     </div>
     <div className="view-blogs">
-      <a href="/articles" className="view-blogs-link">See all</a>
+      <Link to="/articles" className="view-blogs-link">See all</Link>
     </div>
   </div>
 </>

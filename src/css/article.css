@@ -1,5 +1,6 @@
 .article-container{
-    margin: 0 22vw;
+    max-width: 46vw;
+    margin: auto;
 }
 
 .article-container *{

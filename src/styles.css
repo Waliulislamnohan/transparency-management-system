@@ -28,6 +28,7 @@ body {
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
   background-color: #f1f1f1;
+  margin-top: 4rem;
 }
 
 .main-container {
@@ -164,7 +165,7 @@ body {
 .cards {
   display: inline-block;
   padding: 30px;
-  max-width: 80%;
+  max-width: 90%;
   border-radius: 10px;
   background-color: #dedcdc;
 }
@@ -176,11 +177,11 @@ body {
 }
 
 .card {
-  height: 9rem;
+  height: 10rem;
   border-radius: 5px;
   background-size: cover;
   color: rgb(168, 168, 168);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px #0000001a;
 }
 
 .card div{

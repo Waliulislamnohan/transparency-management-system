@@ -1,109 +1,150 @@
 import finance from "../assets/img/importance.jpeg";
-import blog from "../assets/img/blog-img.jpg";
 import trust from "../assets/img/trust.jpg";
-import curruption from "../assets/img/curruption.jpg";
+import corruption from "../assets/img/curruption.jpg";
 
 export const articlesData = [
-    {
-      id: 1,
-      title: "Importance of Financial Transparency",
-      date: "12 January 2024",
-      description: "Financial transparency is key to ensuring trust in government systems. In this article, we discuss why it matters and how our solution can help.",
-      image: finance,
-      link: "/articles/1",
-      content: [
-        {
-          type: "image",
-          src: finance,
-          alt: "A visual representation of transparency"
-        },
-        {
-          type: "paragraph",
-          text: "In a world increasingly demanding accountability, embracing transparency is no longer optional—it’s essential."
-        },
-        {
-          type: "paragraph",
-          text: "Transparency fosters confidence among stakeholders, whether they are citizens, investors, or business partners. Knowing how resources are allocated and spent reassures people that funds are used responsibly."
-        },
-        {
-          type: "paragraph",
-          text: "It also plays a crucial role in preventing corruption. Lack of transparency creates fertile ground for unethical practices, but clear and accessible financial records can help identify and address such issues effectively."
-        },
-        {
-          type: "paragraph",
-          text: "Challenges in achieving transparency include complex financial systems, resistance to change, and outdated technology. These barriers often hinder organizations and governments from providing real-time data and actionable insights."
-        },
-        {
-          type: "paragraph",
-          text: "However, advancements in technology have revolutionized how financial transparency can be achieved. Tools like real-time dashboards, AI-powered analysis, and blockchain ensure authenticity and accountability, providing stakeholders with the tools to monitor finances effectively."
-        },
-        {
-          type: "paragraph",
-          text: "Financial transparency isn’t just a good practice—it’s a necessity in today’s interconnected world. By embracing transparency, governments and organizations can build trust, prevent corruption, and foster a culture of accountability."
-        }
-      ]
-    },
-    {
-      id: 2,
-      title: "Combating Corruption",
-      date: "15 January 2024",
-      description: "Corruption often thrives where financial information is hidden. We explore how transparency helps fight corruption.",
-      image: curruption,
-      link: "/articles/2",
-      content: [
-        {
-          type: "image",
-          src: curruption,
-          alt: "A visual representation of corruption"
-        },
-        {
-          type: "paragraph",
-          text: "Corruption thrives where financial information is hidden or manipulated. Transparency in financial records ensures that the public can hold organizations and governments accountable for their spending."
-        },
-        {
-          type: "paragraph",
-          text: "By providing real-time visibility into public finances, transparency can deter corrupt activities. Clear, accessible data allows citizens to track spending and identify areas of concern before they spiral into corruption."
-        },
-        {
-          type: "paragraph",
-          text: "Public-facing platforms that publish financial reports empower citizens to demand responsible management of funds, fostering a system of checks and balances."
-        },
-        {
-          type: "paragraph",
-          text: "While the challenge of overcoming deeply embedded corruption remains, transparency is the first step toward a fairer and more just society."
-        }
-      ]
-    },
-    {
-      id: 3,
-      title: "Enhancing Public Trust",
-      date: "20 January 2024",
-      description: "Technology plays a significant role in improving transparency and accountability in public spending.",
-      image: trust,
-      link: "/articles/3",
-      content: [
-        {
-          type: "image",
-          src: trust,
-          alt: "A visual representation of technology in accountability"
-        },
-        {
-          type: "paragraph",
-          text: "Advancements in technology have revolutionized how public spending can be tracked and monitored. Data analytics tools and blockchain technology allow for real-time tracking of funds, ensuring accountability."
-        },
-        {
-          type: "paragraph",
-          text: "Governments can use modern financial platforms to provide citizens with up-to-date information on spending, increasing transparency and trust in their decision-making processes."
-        },
-        {
-          type: "paragraph",
-          text: "These tools also help governments identify inefficiencies and optimize their spending. By making financial data more accessible, citizens are empowered to scrutinize government spending and demand improvements."
-        },
-        {
-          type: "paragraph",
-          text: "Public trust grows when citizens know that financial decisions are being made responsibly and transparently. Technology has bridged the gap, creating a more informed, engaged, and empowered public."
-        }
-      ]
-    }
-  ];
+  {
+    id: 1,
+    title: "Combating Corruption in Bangladesh",
+    date: "15 January 2024",
+    description: "Corruption thrives where financial information is hidden. Our platform brings transparency to fight this issue.",
+    image: corruption, // Replace with actual image path
+    link: "/articles/1",
+    content: [
+      {
+        type: "image",
+        src: corruption,
+        alt: "A visual representation of transparency"
+      },
+      {
+        type: "paragraph",
+        subtitle: "Addressing Hidden Transactions",
+        text: [
+          "Corruption often flourishes when financial dealings are hidden from public view. In Bangladesh, this leads to wasted resources and incomplete projects.",
+          "Our platform makes transactions visible, reducing the chances of unethical practices and ensuring public funds are used responsibly."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Encouraging Accountability",
+        text: [
+          "When financial data is open to the public, officials and contractors know their actions are being watched. This discourages misuse of resources.",
+          "Transparency creates an ecosystem where every entity involved in public spending is held accountable for their actions."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Empowering Citizens to Act",
+        text: [
+          "Our platform allows citizens to monitor and report suspicious activities. If a project is delayed or funds are misused, people can raise their concerns.",
+          "This empowers communities to take an active role in preventing corruption at all levels."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "A Transparent Tomorrow",
+        text: [
+          "Corruption has held Bangladesh back for years, but transparency offers a solution. By using our platform, we can ensure public funds are used effectively and ethically.",
+          "Together, we can create a corruption-free future where resources benefit everyone equally."
+        ]
+      }
+    ]
+  },
+  {
+    id: 2,
+    title: "Enhancing Public Trust",
+    date: "20 January 2024",
+    description: "Building trust in governance is essential for progress. Our platform bridges the gap between citizens and the government.",
+    image: trust, // Replace with actual image path
+    link: "/articles/2",
+    content: [
+      {
+        type: "image",
+        src: trust,
+        alt: "A visual representation of public trust"
+      },
+      {
+        type: "paragraph",
+        subtitle: "Rebuilding Public Confidence",
+        text: [
+          "Citizens in Bangladesh often lose faith in governance due to a lack of transparency. This disconnect weakens the bond between the public and officials.",
+          "Our platform helps rebuild this confidence by showcasing how public funds are allocated and spent."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Fostering Participation",
+        text: [
+          "Transparency encourages citizens to take part in governance. When people know how resources are distributed, they feel more connected and engaged.",
+          "For instance, farmers can track how funds for irrigation projects are utilized, ensuring accountability at the grassroots level."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Strengthening Relationships",
+        text: [
+          "Trust grows when there is clarity in financial dealings. Citizens are more likely to support policies and reforms when they see transparency in action.",
+          "Our platform bridges the gap between the government and the people, creating a collaborative environment."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "A Future Built on Trust",
+        text: [
+          "Trust is the foundation of progress. By making governance more transparent, we can foster a society where people believe in their leaders and work together for a brighter future.",
+          "Our platform is the first step toward building this trust, one transaction at a time."
+        ]
+      }
+    ]
+  },
+  {
+    id: 3,
+    title: "Importance of Financial Transparency",
+    date: "25 January 2024",
+    description: "Financial transparency ensures accountability and trust in public spending. It is essential for a fair and just society.",
+    image: finance, // Replace with actual image path
+    link: "/articles/3",
+    content: [
+      {
+        type: "image",
+        src: finance,
+        alt: "A visual representation of financial transparency"
+      },
+      {
+        type: "paragraph",
+        subtitle: "Understanding Transparency",
+        text: [
+          "Financial transparency means showing where every penny is spent. It ensures that public funds are used for their intended purpose and not misappropriated.",
+          "For example, publishing data on school funding helps citizens verify if the money is being spent on improving education."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Driving Ethical Governance",
+        text: [
+          "When financial data is accessible, it discourages unethical behavior. Officials are less likely to misuse funds when their actions are visible to the public.",
+          "Our platform ensures that all transactions are documented and available for scrutiny, creating a culture of honesty."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Encouraging Economic Growth",
+        text: [
+          "Transparency boosts investor confidence, leading to increased economic activity. When businesses know that government dealings are clear, they are more likely to invest.",
+          "This leads to job creation and overall economic development, benefiting everyone in the country."
+        ]
+      },
+      {
+        type: "paragraph",
+        subtitle: "Transparency for a Better Tomorrow",
+        text: [
+          "Financial transparency is not just about numbers; it’s about trust and fairness. It lays the foundation for a society where everyone has equal opportunities.",
+          "With our platform, Bangladesh can ensure that public funds are used wisely, paving the way for a prosperous future."
+        ]
+      }
+    ]
+  }
+];
+
+
   

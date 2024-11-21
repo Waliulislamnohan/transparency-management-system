@@ -6,17 +6,17 @@ export default function Header() {
   return (
     <>
     <nav>
-      <a className="header-logo" href="/">
+      <Link className="header-logo" to="/">
         <img src={Logo} alt="Logo" className="logo-img" id='logo-img'/>
         <label htmlFor="logo-img">Transparency Portal</label> 
-      </a>
+      </Link>
     <div className="nav-links">
         <div className="options">
-          <a className="nav-link" href="/">
+          <Link className="nav-link" to="/">
           <svg className="nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h18v-10h3zm-5 8h-14v-10.26l7-6.912 7 6.99v10.182zm-5-1h-4v-6h4v6z"/>
           </svg>
             <span>Home</span>
-          </a>
+          </Link>
           <Link className="nav-link" to="/process">
           <svg className="nav-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M19.757 20.171c-.791.524-1.739.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.018-.305 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-7.654.829h-12.103v-20h7c1.695 1.942 2.371 3 4 3h11v7.103c-.574-.586-1.25-1.072-2-1.428v-3.675h-9c-2.339 0-3.537-1.388-4.917-3h-4.083v16h8.675c.356.75.842 1.426 1.428 2zm4.897-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3z"/></svg>
             <span>Data Analysis</span>
@@ -45,11 +45,11 @@ export default function Header() {
         </svg>
         <span>admin account</span>
         </Link>
-        <a className="mb-nav-link" href="/">
+        <Link className="mb-nav-link" to="/">
           <svg className="mb-nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20 7.093v-5.093h-3v2.093l3 3zm4 5.907l-12-12-12 12h3v10h18v-10h3zm-5 8h-14v-10.26l7-6.912 7 6.99v10.182zm-5-1h-4v-6h4v6z"/>
           </svg>
             <span>Home</span>
-          </a>
+          </Link>
           <Link className="mb-nav-link" to="/process">
             <svg className="mb-nav-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M19.757 20.171c-.791.524-1.739.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.018-.305 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-7.654.829h-12.103v-20h7c1.695 1.942 2.371 3 4 3h11v7.103c-.574-.586-1.25-1.072-2-1.428v-3.675h-9c-2.339 0-3.537-1.388-4.917-3h-4.083v16h8.675c.356.75.842 1.426 1.428 2zm4.897-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3z"/></svg>
             <span>Data Analysis</span>
