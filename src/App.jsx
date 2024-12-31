@@ -5,8 +5,10 @@ import Home from "./pages/Home";
 import Budgets from "./pages/budgets";
 import Articles from './pages/articles';
 import Admin from './pages/admin';
+import Login from './pages/login';
 import Process from './pages/process';
 import Article from "./pages/article";
+import Analyzer from "./components/analyze";
 
 export default function App() {
 
@@ -27,7 +29,9 @@ export default function App() {
           <Route index element={<Home />} />
           <Route path="/budgets" element={<Budgets />} />
           <Route path="/articles" element={<Articles />} />
+          <Route path="/analyser" element={<Analyzer />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/process" element={<Process />} />
           <Route path="/articles/:id" element={<Article />} />
       </Routes>

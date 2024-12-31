@@ -27,6 +27,12 @@
 .start-word, .end-word{
     overflow: hidden;
 }
+.last-word{
+    position: absolute;
+    top: 50vh;
+    left: 30vw;
+}
+
 
 .start-word span, .end-word span{
     display: block;

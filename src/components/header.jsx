@@ -17,7 +17,7 @@ export default function Header() {
           </svg>
             <span>Home</span>
           </Link>
-          <Link className="nav-link" to="/process">
+          <Link className="nav-link" to="https://tmsfileupload.streamlit.app/">
           <svg className="nav-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M19.757 20.171c-.791.524-1.739.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.018-.305 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-7.654.829h-12.103v-20h7c1.695 1.942 2.371 3 4 3h11v7.103c-.574-.586-1.25-1.072-2-1.428v-3.675h-9c-2.339 0-3.537-1.388-4.917-3h-4.083v16h8.675c.356.75.842 1.426 1.428 2zm4.897-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3z"/></svg>
             <span>Data Analysis</span>
           </Link>
@@ -26,7 +26,7 @@ export default function Header() {
             <span>Articles</span>
           </Link>
         </div>
-        <Link to="/admin" className="ad-icon">
+        <Link to="/login" className="ad-icon">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"/>
         </svg>
@@ -39,7 +39,7 @@ export default function Header() {
               <span className="bar" id="bar3"></span>
             </label>  
         <div className="mb-options">    
-        <Link to="/admin" className="mb-nav-link">
+        <Link to="/login" className="mb-nav-link">
         <svg className="mb-nav-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
         <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm7.753 18.305c-.261-.586-.789-.991-1.871-1.241-2.293-.529-4.428-.993-3.393-2.945 3.145-5.942.833-9.119-2.489-9.119-3.388 0-5.644 3.299-2.489 9.119 1.066 1.964-1.148 2.427-3.393 2.945-1.084.25-1.608.658-1.867 1.246-1.405-1.723-2.251-3.919-2.251-6.31 0-5.514 4.486-10 10-10s10 4.486 10 10c0 2.389-.845 4.583-2.247 6.305z"/>
         </svg>
@@ -50,7 +50,7 @@ export default function Header() {
           </svg>
             <span>Home</span>
           </Link>
-          <Link className="mb-nav-link" to="/process">
+          <Link className="mb-nav-link" to="https://tmsfileupload.streamlit.app/">
             <svg className="mb-nav-icon" width="24" height="24" xmlns="http://www.w3.org/2000/svg" fillRule="evenodd" clipRule="evenodd"><path d="M19.757 20.171c-.791.524-1.739.829-2.757.829-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5c0 1.018-.305 1.966-.829 2.757l2.829 2.829-1.414 1.414-2.829-2.829zm-7.654.829h-12.103v-20h7c1.695 1.942 2.371 3 4 3h11v7.103c-.574-.586-1.25-1.072-2-1.428v-3.675h-9c-2.339 0-3.537-1.388-4.917-3h-4.083v16h8.675c.356.75.842 1.426 1.428 2zm4.897-8c1.656 0 3 1.344 3 3s-1.344 3-3 3-3-1.344-3-3 1.344-3 3-3z"/></svg>
             <span>Data Analysis</span>
           </Link>

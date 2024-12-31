@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
   const mockUsername = 'user';
@@ -7,6 +8,7 @@ export default function Login() {
   const [formData, setFormData] = useState({ username: '', password: '' });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState(false);
+  const navigate = useNavigate();
 
   // Function to handle input changes
   function handleChange(event) {
@@ -23,6 +25,7 @@ export default function Login() {
     } else if (formData.username === mockUsername && formData.password === mockPassword) {
       setError('');
       setSuccess(true); // Simulate successful login
+      navigate('/admin'); // Redirect to admin page
     } else {
       setError('Invalid username or password.');
       setSuccess(false);

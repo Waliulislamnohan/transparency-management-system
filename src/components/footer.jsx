@@ -32,11 +32,7 @@ export default function Footer() {
           </div>
       </div>
       </div>
-      <div className="copy-right">        
-        Copyright © 
-            2024
-             All Rights Reserved<br/>
-        Government of the People's Republic of Bangladesh    
+      <div className="copy-right">           
       </div>
     </footer>
     </>

@@ -3,7 +3,7 @@ import Header from "../components/header.jsx";
 import Updates from "../components/updates.jsx";
 import Footer from "../components/footer.jsx";
 import Stats from "../components/stats.jsx";
-import intro from "../assets/img/Intro_bg.jpg";
+import intro from "../assets/img/Intro_bg.png";
 import finance from "../assets/img/Financial.jpg";
 import funding from "../assets/img/Funding.jpeg";
 import policies from "../assets/img/Policies.webp";

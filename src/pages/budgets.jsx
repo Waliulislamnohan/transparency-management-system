@@ -6,9 +6,6 @@ import BarCh from "../components/barChart.jsx";
 import PieCh from "../components/pieChart.jsx";
 
 export default function Budgets() {
-  useEffect(() => {
-    document.title = "Budgets and Operations";
-  });
 
   return (
     <>
