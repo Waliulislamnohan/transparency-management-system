@@ -74,3 +74,20 @@
     font-size: 2rem;
     margin-bottom: 20px;
   }
+
+  .create-account-link {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: .8rem;
+  }
+  
+  .create-account-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 4px;
+  }
+  
+  .create-account-link a:hover {
+    text-decoration: underline;
+  }

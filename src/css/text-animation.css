@@ -29,8 +29,9 @@
 }
 .last-word{
     position: absolute;
-    top: 50vh;
-    left: 30vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 
@@ -60,6 +61,11 @@
 
     .title span{
         text-align: start;
+    }
+
+    .last-word{
+        top: 60%;
+        font-size: 1.6rem;
     }
 }
 

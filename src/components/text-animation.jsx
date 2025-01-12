@@ -22,7 +22,7 @@ export default function Intro() {
         <span>by region</span>
         <span>by sector</span>
     </div>
-    <div className=" last-word">আমার টাকা গেল কই?</div>
+    <div className="last-word">আমার টাকা গেল কই?</div>
 </h1>
 
     </>

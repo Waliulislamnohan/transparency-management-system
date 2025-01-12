@@ -45,9 +45,9 @@ footer{
   .copy-right{
     text-align: center;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: .8rem;
+    color: #6c757d;
     width: 98%;
     padding: 10px 0;
-    color: #505050;
     border-top: 1px solid #aaaaaa;
   }
