@@ -43,7 +43,7 @@ export default function App() {
           <Route path="/articles" element={<Articles />} />
           <Route path="/analyser" element={<Analyzer />} />
           <Route path="/admin" element={<Admin />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/user" element={<Login />} />
           <Route path="/process" element={<Process />} />
           <Route path="/articles/:id" element={<Article />} />
       </Routes>

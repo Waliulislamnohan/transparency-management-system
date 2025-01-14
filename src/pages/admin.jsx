@@ -6,7 +6,7 @@ export default function Admin() {
     return (
     <>
     <Header />
-    <div style={{height: '76vh',}}>
+    <div style={{height: '73vh',}}>
     <h1 style={{
         position: 'absolute',
         top: '50%',
